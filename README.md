@@ -10,7 +10,7 @@ Download from http://example.com/FIXME.
 
 FIXME: explanation
 
-    $ java -jar excel2dat-0.1.0-standalone.jar [args]
+    $ java -jar excel2dat-0.1.0-standalone.jar {file-path} {sheet-name} {column-name1} {column-name2}..
 
 ## Options
 

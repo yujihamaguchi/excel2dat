@@ -7,12 +7,12 @@
   (let [book (xls/load-workbook file-path)
         records (xls/read-sheet book sheet-name)]
     (println
-    (->> (map #(select-keys % column-names) records)
-         (map vals)
-         (map (partial interpose "|"))
-         (map (partial apply str))
-         (interpose "\n")
-         (apply str)))))
+      (->> (map #(select-keys % column-names) records)
+           (map vals)
+           (map (partial interpose "|"))
+           (map (partial apply str))
+           (interpose "\n")
+           (apply str)))))
 
 (defn -main
   [& args]
